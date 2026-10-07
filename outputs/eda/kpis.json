@@ -1,0 +1,11 @@
+{
+  "line_items": 770417,
+  "orders": 36333,
+  "customers": 5839,
+  "products": 4612,
+  "countries": 41,
+  "revenue": 16467402.7,
+  "avg_order_value": 453.24,
+  "first_date": "2009-12-01T07:45:00.000",
+  "last_date": "2011-12-09T12:50:00.000"
+}

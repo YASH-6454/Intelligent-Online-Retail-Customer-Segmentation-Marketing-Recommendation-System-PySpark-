@@ -1,0 +1,88 @@
+{
+  "data_quality": [
+    {
+      "step": "raw",
+      "rows": 1067371,
+      "removed": 0
+    },
+    {
+      "step": "customer_id_present",
+      "rows": 824364,
+      "removed": 243007
+    },
+    {
+      "step": "not_cancelled",
+      "rows": 805620,
+      "removed": 261751
+    },
+    {
+      "step": "positive_quantity_price",
+      "rows": 805549,
+      "removed": 261822
+    },
+    {
+      "step": "product_codes_only",
+      "rows": 802632,
+      "removed": 264739
+    },
+    {
+      "step": "deduplicated",
+      "rows": 776577,
+      "removed": 290794
+    },
+    {
+      "step": "reversed_orders_removed",
+      "rows": 770417,
+      "removed": 296954
+    }
+  ],
+  "kpis": {
+    "line_items": 770417,
+    "orders": 36333,
+    "customers": 5839,
+    "products": 4612,
+    "countries": 41,
+    "revenue": 16467402.7,
+    "avg_order_value": 453.24,
+    "first_date": "2009-12-01 07:45:00",
+    "last_date": "2011-12-09 12:50:00"
+  },
+  "k_selection": {
+    "chosen_k": 5,
+    "chosen_silhouette": 0.3587,
+    "chosen_segment_groups": 4,
+    "best_overall_k": 2,
+    "best_overall_silhouette": 0.5137,
+    "reason": "k=5 gives the most distinct actionable segment groups (4: Champions, Loyal, At-Risk, Hibernating, Lost) within the business range 4-6, with silhouette 0.359. k=4 has a higher silhouette (0.407) but only 3 groups (Champions, Loyal, Hibernating, Lost). k=2 is the global silhouette maximum (0.514) but splits customers into too few groups to target differently.",
+    "pca_explained_variance": [
+      0.5797,
+      0.1596
+    ]
+  },
+  "basket": {
+    "baskets": 36333,
+    "min_support": 0.015,
+    "min_confidence": 0.2,
+    "rules": 144
+  },
+  "final_customers": 5839,
+  "segments": {
+    "Loyal": 1521,
+    "Hibernating": 1354,
+    "Lost": 1055,
+    "Champions": 1026,
+    "At-Risk": 883
+  },
+  "churn_risk": {
+    "Low": 2780,
+    "High": 2385,
+    "Medium": 674
+  },
+  "priority": {
+    "P2": 3082,
+    "P4": 2013,
+    "P3": 393,
+    "P1": 351
+  },
+  "with_product_recs": 4567
+}

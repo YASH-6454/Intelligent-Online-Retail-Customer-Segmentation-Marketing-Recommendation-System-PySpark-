@@ -1,0 +1,51 @@
+Segment,Category,Revenue,Share
+At-Risk,Kitchen & Dining,261172.0800000005,0.25
+At-Risk,Other,196896.53999999998,0.1884
+At-Risk,Bags & Storage,145304.15,0.1391
+At-Risk,Home Decor,136262.01999999996,0.1304
+At-Risk,Lighting & Candles,94456.91999999997,0.0904
+At-Risk,Stationery & Gift Wrap,69637.66999999995,0.0666
+At-Risk,Christmas & Seasonal,53787.28000000009,0.0515
+At-Risk,Garden & Outdoor,38532.099999999984,0.0369
+At-Risk,Toys & Kids,35878.43999999998,0.0343
+At-Risk,Fashion & Accessories,12961.11,0.0124
+Champions,Kitchen & Dining,2663199.9600000186,0.2252
+Champions,Home Decor,2071884.9100000027,0.1752
+Champions,Other,2036105.9300000079,0.1722
+Champions,Bags & Storage,2005728.7599999993,0.1696
+Champions,Lighting & Candles,1021332.7299999979,0.0864
+Champions,Stationery & Gift Wrap,664665.1100000008,0.0562
+Champions,Christmas & Seasonal,482187.58999999636,0.0408
+Champions,Garden & Outdoor,408748.35000000073,0.0346
+Champions,Toys & Kids,348976.85000000085,0.0295
+Champions,Fashion & Accessories,120950.47000000009,0.0102
+Hibernating,Kitchen & Dining,184750.1000000002,0.2077
+Hibernating,Other,180910.58000000013,0.2034
+Hibernating,Bags & Storage,127530.97999999997,0.1434
+Hibernating,Home Decor,121092.78000000009,0.1361
+Hibernating,Lighting & Candles,79667.30999999998,0.0896
+Hibernating,Stationery & Gift Wrap,62245.61999999997,0.07
+Hibernating,Christmas & Seasonal,52465.750000000044,0.059
+Hibernating,Garden & Outdoor,35782.63999999999,0.0402
+Hibernating,Toys & Kids,29851.28,0.0336
+Hibernating,Fashion & Accessories,15275.130000000001,0.0172
+Lost,Kitchen & Dining,38909.25,0.2062
+Lost,Other,35813.55999999999,0.1898
+Lost,Bags & Storage,26939.529999999995,0.1428
+Lost,Lighting & Candles,25144.350000000006,0.1332
+Lost,Home Decor,23996.849999999995,0.1272
+Lost,Stationery & Gift Wrap,13628.27,0.0722
+Lost,Garden & Outdoor,7842.98,0.0416
+Lost,Christmas & Seasonal,7676.829999999999,0.0407
+Lost,Toys & Kids,6105.030000000001,0.0324
+Lost,Fashion & Accessories,2651.7299999999996,0.0141
+Loyal,Kitchen & Dining,492097.3499999992,0.1952
+Loyal,Other,478444.3299999995,0.1898
+Loyal,Home Decor,396671.90999999957,0.1574
+Loyal,Bags & Storage,333455.15000000026,0.1323
+Loyal,Lighting & Candles,262701.79000000027,0.1042
+Loyal,Stationery & Gift Wrap,180893.4700000009,0.0718
+Loyal,Christmas & Seasonal,150725.0899999997,0.0598
+Loyal,Garden & Outdoor,103471.60000000008,0.0411
+Loyal,Toys & Kids,88347.99000000002,0.0351
+Loyal,Fashion & Accessories,33644.49999999997,0.0133

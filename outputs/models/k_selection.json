@@ -1,0 +1,12 @@
+{
+  "chosen_k": 5,
+  "chosen_silhouette": 0.3587,
+  "chosen_segment_groups": 4,
+  "best_overall_k": 2,
+  "best_overall_silhouette": 0.5137,
+  "reason": "k=5 gives the most distinct actionable segment groups (4: Champions, Loyal, At-Risk, Hibernating, Lost) within the business range 4-6, with silhouette 0.359. k=4 has a higher silhouette (0.407) but only 3 groups (Champions, Loyal, Hibernating, Lost). k=2 is the global silhouette maximum (0.514) but splits customers into too few groups to target differently.",
+  "pca_explained_variance": [
+    0.5797,
+    0.1596
+  ]
+}

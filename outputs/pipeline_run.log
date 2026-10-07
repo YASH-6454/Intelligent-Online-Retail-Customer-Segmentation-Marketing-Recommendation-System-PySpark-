@@ -1,0 +1,73 @@
+Spark 4.2.0 | master=local[*]
+
+[1. Ingestion (CSV -> bronze Parquet)]
+  done in 4.8s
+
+[2. Cleaning & validation (silver)]
+  raw                          1,067,371
+  customer_id_present            824,364
+  not_cancelled                  805,620
+  positive_quantity_price        805,549
+  product_codes_only             802,632
+  deduplicated                   776,577
+  reversed_orders_removed        770,417
+  done in 16.1s
+
+[3. EDA with Spark SQL]
+  done in 7.1s
+
+[4. Feature engineering (gold)]
+  customers: 5,839
+  done in 5.8s
+
+[5. K-Means clustering]
+  K-Means sweep:
+    k=2: silhouette=0.5137 wssse=24995 groups=2 [Champions, Lost]
+    k=3: silhouette=0.3797 wssse=20653 groups=3 [Champions, Loyal, Lost]
+    k=4: silhouette=0.4073 wssse=17596 groups=3 [Champions, Loyal, Hibernating, Lost]
+    k=5: silhouette=0.3587 wssse=15602 groups=4 [Champions, Loyal, At-Risk, Hibernating, Lost]
+    k=6: silhouette=0.3381 wssse=14716 groups=4 [Champions, Loyal, Can't Lose Them, At-Risk, Hibernating, Lost]
+    k=7: silhouette=0.3399 wssse=13702 groups=4 [Champions, Loyal, Loyal (II), At-Risk, Hibernating, Lost, Lost (III)]
+    k=8: silhouette=0.3243 wssse=12769 groups=5 [Champions, Loyal, Can't Lose Them, At-Risk, Potential, Hibernating, Lost, Lost (III)]
+  k=5 gives the most distinct actionable segment groups (4: Champions, Loyal, At-Risk, Hibernating, Lost) within the business range 4-6, with silhouette 0.359. k=4 has a higher silhouette (0.407) but only 3 groups (Champions, Loyal, Hibernating, Lost). k=2 is the global silhouette maximum (0.514) but splits customers into too few groups to target differently.
+  done in 19.1s
+
+[6. Segment profiling]
+ Cluster     Segment  Customers  Recency_median  Frequency_median  Monetary_median  RevenueShare
+       2   Champions       1026              18                14          5617.04        0.7180
+       0       Loyal       1521              41                 5          1403.20        0.1531
+       3     At-Risk        883             236                 3           853.88        0.0635
+       4 Hibernating       1354             318                 1           469.19        0.0540
+       1        Lost       1055             337                 1           155.80        0.0115
+  done in 0.4s
+
+[7. Value score & churn risk]
+  done in 0.2s
+
+[8. Market basket (FP-Growth)]
+    minSupport=0.02: 62 rules
+    minSupport=0.015: 144 rules
+  done in 36.4s
+
+[9. Product behaviour per segment]
+  done in 7.3s
+
+[10. Recommendation engine]
+  done in 5.1s
+
+[11. Benchmark pandas vs PySpark]
+    1x pandas: 0.07s (770,417 rows)
+    1x pyspark: 0.21s (770,417 rows)
+    5x pandas: 0.32s (3,852,085 rows)
+    5x pyspark: 0.56s (3,852,085 rows)
+    10x pandas: 0.66s (7,704,170 rows)
+    10x pyspark: 0.97s (7,704,170 rows)
+    20x pandas: 1.6s (15,408,340 rows)
+    20x pyspark: 1.66s (15,408,340 rows)
+  done in 35.5s
+
+[12. Charts]
+  charts -> /Users/rohit/Desktop/BDA project/outputs/charts
+  done in 2.2s
+
+Outputs in /Users/rohit/Desktop/BDA project/outputs

@@ -1,0 +1,8 @@
+step,rows,removed
+raw,1067371,0
+customer_id_present,824364,243007
+not_cancelled,805620,261751
+positive_quantity_price,805549,261822
+product_codes_only,802632,264739
+deduplicated,776577,290794
+reversed_orders_removed,770417,296954

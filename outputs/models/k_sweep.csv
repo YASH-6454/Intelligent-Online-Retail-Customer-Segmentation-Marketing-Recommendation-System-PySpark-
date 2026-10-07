@@ -1,0 +1,8 @@
+k,silhouette,wssse,min_cluster_size,segment_groups,segments
+2,0.5137,24995.19,2487,2,"Champions, Lost"
+3,0.3797,20652.77,1403,3,"Champions, Loyal, Lost"
+4,0.4073,17596.36,895,3,"Champions, Loyal, Hibernating, Lost"
+5,0.3587,15602.11,883,4,"Champions, Loyal, At-Risk, Hibernating, Lost"
+6,0.3381,14716.34,449,4,"Champions, Loyal, Can't Lose Them, At-Risk, Hibernating, Lost"
+7,0.3399,13701.89,410,4,"Champions, Loyal, Loyal (II), At-Risk, Hibernating, Lost, Lost (III)"
+8,0.3243,12769.17,432,5,"Champions, Loyal, Can't Lose Them, At-Risk, Potential, Hibernating, Lost, Lost (III)"

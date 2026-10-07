@@ -1,0 +1,12 @@
+# Python / env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Raw dataset (large; re-create with: python scripts/download_data.py)
+data/raw/

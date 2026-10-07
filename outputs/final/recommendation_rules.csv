@@ -1,0 +1,11 @@
+RuleId,Action,Channel,Offer,Priority
+R1-VALUABLE-SLIPPING,Personal win-back: account-manager outreach + voucher on favourite category,Email + Phone,15% win-back voucher,P1
+R2-CHAMPION-ACTIVE,"VIP loyalty: early access to new ranges, free shipping, referral rewards",Email + Loyalty programme,VIP perks (no discount),P2
+R3-CHAMPION-COOLING,VIP check-in: personalised thank-you + exclusive bundle before they drift,Email,Exclusive bundle,P1
+R4-LOYAL,Membership / points programme + cross-sell from frequently-bought-together items,Email + On-site recommendations,Double loyalty points,P2
+R5-POTENTIAL-ACTIVE,Nurture: cross-sell recommended products + second-order incentive,Email + On-site recommendations,10% off next order,P3
+R6-POTENTIAL-SLIPPING,Early re-activation: reminder of favourite category + free shipping,Email + Retargeting ads,Free shipping,P2
+R7-AT-RISK,Win-back campaign: 'We miss you' message with discount,Email + Retargeting ads,10% discount,P2
+R8-LOST-WORTH-TRYING,Re-engagement: seasonal catalogue + comeback offer,Email,20% comeback offer,P3
+R9-LOST,"Low-cost re-engagement: newsletter only, exclude from paid campaigns",Newsletter,None,P4
+R0-DEFAULT,Standard newsletter,Newsletter,None,P4

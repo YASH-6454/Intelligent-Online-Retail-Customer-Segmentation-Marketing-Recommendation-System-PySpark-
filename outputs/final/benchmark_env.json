@@ -1,0 +1,6 @@
+{
+  "cpu_cores": 10,
+  "ram_gb": 17.2,
+  "spark_master": "local[*]",
+  "driver_memory": "6g"
+}
